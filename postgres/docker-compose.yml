@@ -1,0 +1,8 @@
+# to access use external IP not localhost
+db:
+  image: postgres #:9.4
+  restart: always
+  environment:
+    POSTGRES_PASSWORD: example
+  ports:
+      - 5432:5432
